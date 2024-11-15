@@ -2,12 +2,11 @@ name: Waka Readme
 
 on:
   schedule:
-    - cron: '30 18 * * *'  # Runs at 12:30 AM IST daily
+    - cron: '30 18 * * *'  # Scheduled daily at 12:30 AM IST
   workflow_dispatch:
 
 jobs:
   update-readme:
-    name: Update Readme with Metrics
     runs-on: ubuntu-latest
 
     steps:
@@ -15,8 +14,10 @@ jobs:
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          SHOW_OS: "False"        # Disables OS usage stats
-          SHOW_PROJECTS: "False"  # Disables project stats
-          SHOW_LANGUAGES: "True"  # Shows language stats
-          SHOW_CODE_TIME: "True"  # Shows total coding time
-          SHOW_LINES_OF_CODE: "False"  # Disables lines of code stats
+          SHOW_OS: "True"
+          SHOW_PROJECTS: "True"
+          SHOW_EDITORS: "True"
+          SHOW_LANGUAGE: "True"  # Enable language stats
+          SHOW_LINES_OF_CODE: "False"  # Disable lines of code for performance
+          SHOW_TOTAL_CODE_TIME: "True"  # Enable total code time
+          SHOW_PROFILE_VIEWS: "True"
