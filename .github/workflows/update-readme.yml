@@ -2,17 +2,16 @@ name: Waka Readme
 
 on:
   schedule:
-    # Runs at 12am IST, adjust if you want a different time.
-    - cron: '30 18 * * *'  # This is the cron expression to run it daily.
-  workflow_dispatch:  # This allows you to manually trigger the action
+    # Runs at 12am IST (18:30 UTC)
+    - cron: '30 18 * * *'  # Adjust according to your time zone
+  workflow_dispatch:  # Allow triggering the action manually
 
 jobs:
   update-readme:
     name: Update Readme with Metrics
-    runs-on: ubuntu-latest  # This specifies the virtual machine environment for running the action.
-
+    runs-on: ubuntu-latest
     steps:
-      - uses: anmol098/waka-readme-stats@master  # Uses the Waka Readme Stats action
+      - uses: anmol098/waka-readme-stats@master
         with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}  # The WakaTime API Key secret
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}  # The GitHub Access Token secret
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
