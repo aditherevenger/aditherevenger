@@ -23,31 +23,39 @@ Continuous Learner: Certified Ethical Hacker (CEH) and well-versed in Python for
 ```javascript
 const aditya = {
     pronouns: "He" | "Him",
-    code: ["Java", "Python"],
-    askMeAbout: ["web dev", "app dev", "tech trends"],
+    code: ["Java", "Python", "JavaScript", "C++", "SQL"],
+    askMeAbout: ["web dev", "app dev", "tech trends", "cybersecurity", "machine learning"],
     technologies: {
         frontEnd: {
             js: ["React", "Next.js"],
             css: ["Tailwind"],
-            uiLibraries: [""],
+            uiLibraries: ["ShadCN", "Material-UI"],
         },
         backEnd: {
-            Java: frameworks: ["Spring Boot"],
-                  tools: ["REST APIs", "GraphQL", "WebSockets"],
-            js: ["Node", "Express", "NestJS"],
-            python: ["Flask"],
+            Java: {
+                frameworks: ["Spring Boot"],
+                tools: ["REST APIs", "GraphQL", "WebSockets", "JWT", "Kafka"],
+            },
+            js: ["Node.js", "Express", "NestJS"],
+            python: ["Flask", "FastAPI"],
         },
         mobileApp: {
+            native: ["Android (Java, Kotlin)"],
             crossPlatform: ["Flutter"],
         },
-        devOps: ["Docker🐳", "CI/CD", "Nginx", "GitHub Actions"],
+        devOps: ["Docker🐳", "CI/CD", "Nginx", "GitHub Actions", "Kubernetes"],
         cloudServices: {
             aws: ["AWS Fargate", "EC2", "S3", "Lambda", "CloudWatch", "RDS"],
+            gcp: ["Firebase", "Cloud Functions"],
         },
-        databases: ["PostgreSQL", "SQLite"],
-        misc: ["REST APIs"],
-        generativeAI: ["GPT"],
+        databases: ["PostgreSQL", "MySQL", "SQLite", "MongoDB"],
+        caching: ["Redis", "Memcached"],
+        misc: ["REST APIs", "Microservices", "Message Queues (RabbitMQ, Kafka)"],
+        cybersecurity: ["CEH Certified", "Penetration Testing", "Kali Linux", "Burp Suite"],
+        machineLearning: ["Supervised/Unsupervised Learning", "Feature Engineering", "Model Deployment"],
+        generativeAI: ["GPT", "LLM Integration"],
     },
 };
+
 ```
 <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="60"> <em><b>I love connecting with different people</b> so if you want to say <b>hi, I'll be happy to meet you more!</b> 😊</em>
